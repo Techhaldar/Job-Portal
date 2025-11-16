@@ -15,21 +15,21 @@ overlay.addEventListener("click", closeSidebar);
 function closeSidebar() {
    sidebar.classList.add("-translate-x-full");
    overlay.classList.add("hidden");
-   document.body.classList.remove("overflow-hidden"); // enable scroll
+   document.body.classList.remove("overflow-hidden");
 }
 
-const wrapper = document.querySelector('.my-custom-swiper-wrapper');
-const slideWidth = wrapper.querySelector('.custom-slide').offsetWidth;
-const scrollStep = slideWidth + 24; // 24px = gap-6
+// const wrapper = document.querySelector('.my-custom-swiper-wrapper');
+// const slideWidth = wrapper.querySelector('.custom-slide').offsetWidth;
+// const scrollStep = slideWidth + 24;
 
-document.getElementById('prevBtn').addEventListener('click', () => {
-   wrapper.scrollBy({
-      left: -scrollStep, behavior: 'smooth'
-   });
-});
+// document.getElementById('prevBtn').addEventListener('click', () => {
+//    wrapper.scrollBy({
+//       left: -scrollStep, behavior: 'smooth'
+//    });
+// });
 
-document.getElementById('nextBtn').addEventListener('click', () => {
-   wrapper.scrollBy({
-      left: scrollStep, behavior: 'smooth'
-   });
-});
+// document.getElementById('nextBtn').addEventListener('click', () => {
+//    wrapper.scrollBy({
+//       left: scrollStep, behavior: 'smooth'
+//    });
+// });

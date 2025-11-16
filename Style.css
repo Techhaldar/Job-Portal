@@ -13,3 +13,7 @@
 .animate-marquee {
    animation: marquee 30s linear infinite;
 }
+
+.testimonial-pagination {
+   padding-top: 8px;
+}
